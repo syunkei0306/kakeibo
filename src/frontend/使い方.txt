@@ -1,0 +1,12 @@
+【事前準備】
+NodeJSをインストールしておく
+
+【コマンド】
+・npm install
+　package.jsonに書いてあるライブラリのインストール
+・npm run dev
+　ローカルサーバー起動
+・npm run build
+　フロントエンドのビルドを行い、Springのプロジェクトのstaticフォルダ
+・npm run watch
+　frontendフォルダ内のファイルを監視し、変更があれば自動ビルドする

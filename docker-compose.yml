@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      JAVA_OPTS: -Xmx512m
+    command: ["java", "$JAVA_OPTS", "-jar", "app.jar"]
+
+  db:
+    image: postgres:16
+    container_name: kakeibo-db
+    environment:
+      POSTGRES_DB: kakeibo
+      POSTGRES_USER: keito
+      POSTGRES_PASSWORD: syunkei
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data"
+
+volumes:
+  pgdata:

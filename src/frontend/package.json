@@ -1,0 +1,44 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite serve --mode development",
+    "build": "vite build",
+    "build-rel": "vite build --mode release",
+    "watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/encoding-japanese": "^2.2.1",
+    "@types/tabulator-tables": "^6.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "esbuild": "^0.27.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^50.4.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.70.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-static-copy": "^2.2.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.12.0",
+    "@formkit/tempo": "^0.0.17",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "bootstrap5-toggle": "^5.1.1",
+    "decimal.js": "^10.4.3",
+    "encoding-japanese": "^2.2.0",
+    "flatpickr": "^4.6.13",
+    "tabulator-tables": "^6.2.1",
+    "tom-select": "^2.3.1"
+  }
+}

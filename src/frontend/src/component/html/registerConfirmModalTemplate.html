@@ -1,0 +1,21 @@
+<!-- 登録確認モーダル -->
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteConfirmModalLabel">登録確認</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- 削除完了メッセージ -->
+        <div id="deleteSuccessMessage" class="alert alert-success d-none" role="alert">
+          <i class="bi bi-check-circle-fill"></i>
+          <span id="deleteSuccessText">登録が完了しました</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btnCloseDelete" class="btn btn-primary d-none" data-bs-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+/* チェックボックステーブルの設定 */
+.tabulator-custom-checkbox-table {
+  &.tabulator
+    .tabulator-header
+    .tabulator-col:first-of-type
+    .tabulator-col-content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  input[type="checkbox"] {
+    // チェックボックスをやや大きくする（クリック判定が小さすぎたため）
+    transform: scale(1.5);
+  }
+}
+
+/* 合計テーブルの設定 */
+.tabulator-custom-total-table {
+  // メインテーブル
+  &.main {
+    // テーブルコンテナ
+    .tabulator-tableholder {
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+
+  // 合計テーブル
+  &.total {
+    // ヘッダ
+    .tabulator-header {
+      display: none;
+    }
+
+    // テーブルコンテナ
+    .tabulator-tableholder {
+      overflow-y: scroll;
+      border-top: 3px solid #dee2e6;
+
+      .tabulator-row {
+        font-weight: bold;
+
+        // 奇数行
+        &.tabulator-row-odd {
+          background-color: #fdfdcb;
+          // background-color: rgb(255, 255, 255); // 元の色
+        }
+
+        // 偶数行
+        &.tabulator-row-even {
+          background-color: #fde998;
+          // background-color: rgb(233, 236, 239); // 元の色
+        }
+      }
+    }
+  }
+}

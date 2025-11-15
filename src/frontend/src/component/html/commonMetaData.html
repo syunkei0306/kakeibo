@@ -1,0 +1,6 @@
+<meta th:name="_csrf" th:content="${_csrf.token}" />
+<meta th:name="_csrf_header" th:content="${_csrf.headerName}" />
+<!--/* ログイン済みの場合のみ出力 */-->
+<th:block sec:authorize="isAuthenticated()">
+  <meta th:name="authorities" th:content="${#authentication.principal.authorities}" />
+</th:block>

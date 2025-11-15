@@ -1,0 +1,4 @@
+<div class="alert alert-dismissible hidden" th:classappend="${message} ? ${message.type} : ''" id="headerAlert">
+  <span class="message d-inline-block" th:text="${message} ? ${message.text} : ''"></span>
+  <button type="button" class="btn-close"></button>
+</div>
