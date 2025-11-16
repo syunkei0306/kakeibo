@@ -35,3 +35,44 @@ out/
 
 ### VS Code ###
 .vscode/
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.settings/
+bin/
+*.class
+.vscode/
+out/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+.apt_generated
+.classpath
+.factorypath
+.project
+.springBeans
+.sts4-cache
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Node
+node_modules/
+dist/
+
+# Docker
+pgdata/
+.env
+!.env.example
